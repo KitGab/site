@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Резюме | Данила Медведев</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto Mono', monospace;
+      margin: 0;
+      padding: 0;
+      background: #2F343B;
+      color: #E1E1E1;
+      overflow-x: hidden;
+    }
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, #3B4E8E, #2F343B);
+    }
+    .hero h1 {
+      font-size: 4rem;
+      margin: 0;
+      color: #F76C6C;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      animation: float 3s ease-in-out infinite;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      color: #A4C8E1;
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .section {
+      padding: 50px 20px;
+      position: relative;
+      background: rgba(47, 52, 59, 0.8);
+      margin: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .section h2 {
+      font-size: 2.5rem;
+      color: #F76C6C;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    }
+    .skills {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .skill {
+      background: #3B4E8E;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #E1E1E1;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .skill:hover {
+      transform: scale(1.1);
+      background: #F76C6C;
+    }
+    .portfolio {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      background: #3B4E8E;
+      border-radius: 10px;
+      color: #E1E1E1;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .game-section {
+      margin: 20px;
+      padding: 20px;
+      background: rgba(47, 52, 59, 0.8);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .game-section canvas {
+      display: block;
+      margin: 0 auto;
+      background: #1E2125;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border: 2px solid #F76C6C;
+    }
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background: #3B4E8E;
+      color: #E1E1E1;
+    }
+    .contact-form button {
+      background: #F76C6C;
+      color: #E1E1E1;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .contact-form button:hover {
+      background: #A4C8E1;
+      color: #2F343B;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div>
+      <h1>Данила Медведев</h1>
+      <p>Дизайнер/Контент-менеджер</p>
+    </div>
+  </section>
+
+  <section class="game-section">
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+  </section>
+
+  <section class="section">
+    <h2>Специализации</h2>
+    <ul>
+      <li>SMM-менеджер, контент-менеджер</li>
+      <li>Гейм-дизайнер</li>
+      <li>Режиссер, сценарист</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Навыки</h2>
+    <div class="skills">
+      <div class="skill">MS PowerPoint</div>
+      <div class="skill">MS Excel</div>
+      <div class="skill">Google Docs</div>
+      <div class="skill">SMD</div>
+      <div class="skill">Фотография</div>
+      <div class="skill">Работа с большим объемом информации</div>
+      <div class="skill">DeepSeek</div>
+      <div class="skill">Adobe Illustrator</div>
+      <div class="skill">Графические редакторы</div>
+      <div class="skill">Adobe After Effects</div>
+      <div class="skill">Adobe Photoshop</div>
+      <div class="skill">Draw.io</div>
+      <div class="skill">Trello</div>
+      <div class="skill">Предметная фотосъемка</div>
+      <div class="skill">GPT</div>
+      <div class="skill">Stable Diffusion</div>
+      <div class="skill">Аналоговая фотография</div>
+      <div class="skill">Microsoft Visual Studio</div>
+      <div class="skill">Microsoft Visual Code</div>
+      <div class="skill">Unity</div>
+      <div class="skill">Figma</div>
+      <div class="skill">Google Analytics</div>
+      <div class="skill">Adobe InDesign</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Опыт работы</h2>
+    <p><strong>Июль 2024 — по настоящее время</strong><br>
+    РМТ<br>
+    Оператор автоматизированного участка производства микроэлектроники<br>
+    Мануал на швейцарский SMD установщик (около 200 страниц) — моё главное достижение и magnum opus.</p>
+    <p><strong>Май 2022 — Сентябрь 2022</strong><br>
+    Реглет<br>
+    Менеджер копировального центра<br>
+    Фотографии на документы, прошивка обложек дипломов, работа с документами.</p>
+  </section>
+
+  <section class="section">
+    <h2>Портфолио</h2>
+    <div class="portfolio">
+      В РАЗРАБОТКЕ
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Контакты</h2>
+    <p>Мой телеграм: <a href="https://t.me/HELLO_EVERYNYANP" style="color: #F76C6C;">@HELLO_EVERYNYANP</a></p>
+    <p>Резюме на hh.ru: <a href="https://hh.ru/resume/88e832afff0dfe90150039ed1f676c36587362" style="color: #F76C6C;">hh.ru/resume/...</a></p>
+    <p>GitHub: <a href="https://github.com/KitGab" style="color: #F76C6C;">github.com/KitGab</a></p>
+  </section>
+
+  <script>
+    // Мини-игра: Ваша фотография отбивает логотип hh.ru
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+
+    const playerImg = new Image();
+    playerImg.src = 'https://img.hhcdn.ru/photo/779228246.jpeg?t=1741607086&h=d7SoddwOXBccKgBxcaUK4A'; // Ваша фотография
+    const playerWidth = 80;
+    const playerHeight = 80;
+
+    const ballImg = new Image();
+    ballImg.src = 'https://upload.wikimedia.org/wikipedia/commons/7/79/HeadHunter_logo.png'; // Логотип hh.ru
+    const ballRadius = 20;
+
+    let playerX = canvas.width / 2;
+    let playerY = canvas.height - 60;
+    let ballX = canvas.width / 2;
+    let ballY = canvas.height / 2;
+    let dx = 2;
+    let dy = -2;
+    let rightPressed = false;
+    let leftPressed = false;
+
+    const brickRowCount = 5; // Увеличили количество рядов кирпичиков
+    const brickColumnCount = 8; // Увеличили количество колонок кирпичиков
+    const brickWidth = 75;
+    const brickHeight = 20;
+    const brickPadding = 10;
+    const brickOffsetTop = 30;
+    const brickOffsetLeft = 30;
+
+    let bricks = [];
+    for (let c = 0; c < brickColumnCount; c++) {
+      bricks[c] = [];
+      for (let r = 0; r < brickRowCount; r++) {
+        bricks[c][r] = { x: 0, y: 0, status: 1 };
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Right' || e.key === 'ArrowRight') rightPressed = true;
+      if (e.key === 'Left' || e.key === 'ArrowLeft') leftPressed = true;
+    });
+
+    document.addEventListener('keyup', (e) => {
+      if (e.key === 'Right' || e.key === 'ArrowRight') rightPressed = false;
+      if (e.key === 'Left' || e.key === 'ArrowLeft') leftPressed = false;
+    });
+
+    function drawPlayer() {
+      ctx.drawImage(playerImg, playerX - playerWidth / 2, playerY - playerHeight / 2, playerWidth, playerHeight);
+    }
+
+    function drawBall() {
+      ctx.drawImage(ballImg, ballX - ballRadius, ballY - ballRadius, ballRadius * 2, ballRadius * 2);
+    }
+
+    function drawBricks() {
+      for (let c = 0; c < brickColumnCount; c++) {
+        for (let r = 0; r < brickRowCount; r++) {
+          const b = bricks[c][r];
+          if (b.status === 1) {
+            ctx.beginPath();
+            ctx.rect(b.x, b.y, brickWidth, brickHeight);
+            ctx.fillStyle = '#3B4E8E';
+            ctx.fill();
+            ctx.closePath();
+          }
+        }
+      }
+    }
+
+    function collisionDetection() {
+      for (let c = 0; c < brickColumnCount; c++) {
+        for (let r = 0; r < brickRowCount; r++) {
+          const b = bricks[c][r];
+          if (b.status === 1) {
+            if (
+              ballX > b.x &&
+              ballX < b.x + brickWidth &&
+              ballY > b.y &&
+              ballY < b.y + brickHeight
+            ) {
+              dy = -dy;
+              b.status = 0;
+            }
+          }
+        }
+      }
+
+      // Отбивание шарика платформой
+      if (
+        ballY + ballRadius > playerY - playerHeight / 2 &&
+        ballX > playerX - playerWidth / 2 &&
+        ballX < playerX + playerWidth / 2
+      ) {
+        dy = -dy;
+      }
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawBricks();
+      drawBall();
+      drawPlayer();
+      collisionDetection();
+
+      // Отскок шарика от стен
+      if (ballX + dx > canvas.width - ballRadius || ballX + dx < ballRadius) dx = -dx;
+      if (ballY + dy < ballRadius) dy = -dy;
+      else if (ballY + dy > canvas.height - ballRadius) {
+        // Если шарик упал вниз, просто возвращаем его наверх
+        ballX = canvas.width / 2;
+        ballY = canvas.height / 2;
+      }
+
+      // Управление платформой
+      if (rightPressed && playerX < canvas.width - playerWidth / 2) playerX += 7;
+      if (leftPressed && playerX > playerWidth / 2) playerX -= 7;
+
+      ballX += dx;
+      ballY += dy;
+      requestAnimationFrame(draw);
+    }
+
+    // Инициализация кирпичиков
+    for (let c = 0; c < brickColumnCount; c++) {
+      for (let r = 0; r < brickRowCount; r++) {
+        bricks[c][r].x = c * (brickWidth + brickPadding) + brickOffsetLeft;
+        bricks[c][r].y = r * (brickHeight + brickPadding) + brickOffsetTop;
+        bricks[c][r].status = 1;
+      }
+    }
+
+    playerImg.onload = () => {
+      ballImg.onload = () => {
+        draw();
+      };
+    };
+  </script>
+</body>
+</html>
