@@ -138,7 +138,7 @@
   </section>
 
   <section class="game-section">
-    <h2>Мини-игра</h2>
+    <h2>Мини-игра: Сбей логотипы hh.ru!</h2>
     <canvas id="gameCanvas" width="800" height="400"></canvas>
   </section>
 
@@ -212,12 +212,12 @@
     const ctx = canvas.getContext('2d');
 
     const playerImg = new Image();
-    playerImg.src = 'https://img.hhcdn.ru/photo/779228246.jpeg?t=1741607086&h=d7SoddwOXBccKgBxcaUK4A'; // Ваша фотография
+    playerImg.src = 'images/hh-logo.png'; // Логотип hh.ru (локальный файл)
     const playerWidth = 80;
     const playerHeight = 80;
 
     const ballImg = new Image();
-    ballImg.src = 'https://upload.wikimedia.org/wikipedia/commons/7/79/HeadHunter_logo.png'; // Логотип hh.ru
+    ballImg.src = 'images/danila.jpg'; // Ваша фотография (локальный файл)
     const ballRadius = 20;
 
     let playerX = canvas.width / 2;
